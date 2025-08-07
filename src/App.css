@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #444;
+  display: flex;
+  z-index: 1000;
+}
+
+.header-block {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #fff;
+}
+
+.header-block:last-child {
+  border-right: none;
+}
+
+.header-block a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+/* Add padding-top to the App container to prevent content from being hidden behind the fixed header */
+.App {
+  padding-top: 60px; /* Adjust to match header height */
+}
